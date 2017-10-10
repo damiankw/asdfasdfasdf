@@ -16,8 +16,13 @@ int main() {
   string s = "My string!";
   
   // output some variables
-  std::cout << "Int: " << i << EOL;
-  std::cout << "Float: " << f << EOL;
-  std::cout << "Char: " << c << EOL;
-  std::cout << "String: " << s << EOL;
+  cout << "Int: " << i << EOL;
+  cout << "Float: " << f << EOL;
+  cout << "Char: " << c << EOL;
+  cout << "String: " << s << EOL;
+  
+  // accept input
+  cout << "Enter a value: ";
+  cin >> i;
+  cout << "You entered: " << i << EOL;
 }
