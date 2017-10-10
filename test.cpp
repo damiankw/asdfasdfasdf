@@ -20,6 +20,11 @@ void set_add(int& a, int b) {
   a = a + b;
 }
 
+// add by a default value if none given
+int auto_add(int a, int b=1) {
+  return a + b;
+}
+
 int main() {
   // basic output
   std::cout << "Hello, world!" << EOL;
@@ -68,5 +73,8 @@ int main() {
   i = 10;
   set_add(i, 33);
   cout << "New int: " << i << EOL;
+  
+  // default values
+  cout << "Auto-Addition: " << auto_add(10) << EOL;
 }
 
