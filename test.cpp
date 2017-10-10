@@ -5,6 +5,14 @@ using namespace std;
 
 #define EOL '\n';
 
+int add(int a, int b) {
+  return a + b;
+}
+
+void show_add(int a, int b) {
+  cout << a + b;
+}
+
 int main() {
   // basic output
   std::cout << "Hello, world!" << EOL;
@@ -24,21 +32,30 @@ int main() {
   
   // accept int input
   cout << "Enter an int: ";
-  getline(cin, s);      // get the line
-  stringstream(s) >> i; // turn string into int
+  //getline(cin, s);      // get the line
+  //stringstream(s) >> i; // turn string into int
   cout << "You entered: " << i << EOL;
   
   // accept string input
   cout << "Enter a string: ";
-  getline(cin, s);
+  //getline(cin, s);
   cout << "You entered: " << s << EOL;
   
-  cout << "Counting .. ";
   // while loop
+  cout << "Counting .. ";
   while (i > 0) {
     cout << i << " .. ";
     i--;
   }
   cout << EOL;
   
+  // use a returning function
+  cout << "Addition: " << add(1, 5) << EOL;
+  
+  // use an output function
+  cout << "Addition: ";
+  show_add(10, 5);
+  cout << EOL;
+ 
 }
+
