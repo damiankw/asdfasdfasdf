@@ -76,5 +76,18 @@ int main() {
   
   // default values
   cout << "Auto-Addition: " << auto_add(10) << EOL;
+  
+  // create arrays
+  int a_i[] = {10, 20, 30, 40, 50};
+  string a_s[] = {"Hello", "world", "how", "are", "you?"};
+  char a_c[] = "Hello, world!";
+  
+  cout << "a_i[0]: " << a_i[0] << EOL;
+  cout << "a_i[3]: " << a_i[3] << EOL;
+  cout << "a_s[0]: " << a_s[0] << EOL;
+  cout << "a_s[4]: " << a_s[4] << EOL;
+  cout << "a_c: " << a_c << EOL;
+  cout << "a_c[4]: " << a_c[4] << EOL;
+  
 }
 
