@@ -22,13 +22,23 @@ int main() {
   cout << "Char: " << c << EOL;
   cout << "String: " << s << EOL;
   
-  // accept input
+  // accept int input
   cout << "Enter an int: ";
   getline(cin, s);      // get the line
   stringstream(s) >> i; // turn string into int
   cout << "You entered: " << i << EOL;
   
+  // accept string input
   cout << "Enter a string: ";
   getline(cin, s);
   cout << "You entered: " << s << EOL;
+  
+  cout << "Counting .. ";
+  // while loop
+  while (i > 0) {
+    cout << i << " .. ";
+    i--;
+  }
+  cout << EOL;
+  
 }
