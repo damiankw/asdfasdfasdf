@@ -2,10 +2,12 @@
 #include <string>
 using namespace std;
 
+#define EOL '\n';
+
 int main() {
   // basic output
-  std::cout << "Hello, world!\n";
-  std::cout << "This is my test application\n";
+  std::cout << "Hello, world!" << EOL;
+  std::cout << "This is my test application" << EOL;
   
   // set up some variables
   int i = 23;
@@ -14,8 +16,8 @@ int main() {
   string s = "My string!";
   
   // output some variables
-  std::cout << "Int: " << i << endl;
-  std::cout << "Float: " << f << endl;
-  std::cout << "Char: " << c << endl;
-  std::cout << "String: " << s << endl;
+  std::cout << "Int: " << i << EOL;
+  std::cout << "Float: " << f << EOL;
+  std::cout << "Char: " << c << EOL;
+  std::cout << "String: " << s << EOL;
 }
