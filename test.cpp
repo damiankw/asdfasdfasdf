@@ -22,7 +22,11 @@ int main() {
   cout << "String: " << s << EOL;
   
   // accept input
-  cout << "Enter a value: ";
+  cout << "Enter an int: ";
   cin >> i;
   cout << "You entered: " << i << EOL;
+  
+  cout << "Enter a string: ";
+  getline(cin, s);
+  cout << "You entered: " << s << EOL;
 }
