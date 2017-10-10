@@ -5,12 +5,19 @@ using namespace std;
 
 #define EOL '\n';
 
+// return the addition
 int add(int a, int b) {
   return a + b;
 }
 
+// output the addition
 void show_add(int a, int b) {
   cout << a + b;
+}
+
+// set a to the addition
+void set_add(int& a, int b) {
+  a = a + b;
 }
 
 int main() {
@@ -56,6 +63,10 @@ int main() {
   cout << "Addition: ";
   show_add(10, 5);
   cout << EOL;
- 
+  
+  // passing by reference not value
+  i = 10;
+  set_add(i, 33);
+  cout << "New int: " << i << EOL;
 }
 
