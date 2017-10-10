@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <sstream>
+#include <fstream>
 using namespace std;
 
 #define EOL '\n';
@@ -106,5 +107,18 @@ int main() {
   u.payrate = 32.87;
   
   cout << "id:[" << u.id << "] name:[" << u.name << "] password:[" << u.password << "] payrate:[" << u.payrate << "]" << EOL;
+  
+  fstream file;
+  file.open("test.txt");
+  
+  if (!file.is_open()) {
+    cout << "Unable to open file!" << EOL;
+  } else {
+    file << "Writing line 1" << EOL;
+    //file << "Writing line 2" << EOL;
+    file.close();
+  }
+  
+  
 }
 
