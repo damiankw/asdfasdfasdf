@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <sstream>
 using namespace std;
 
 #define EOL '\n';
@@ -23,7 +24,8 @@ int main() {
   
   // accept input
   cout << "Enter an int: ";
-  cin >> i;
+  getline(cin, s);      // get the line
+  stringstream(s) >> i; // turn string into int
   cout << "You entered: " << i << EOL;
   
   cout << "Enter a string: ";
