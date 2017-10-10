@@ -5,6 +5,15 @@ using namespace std;
 
 #define EOL '\n';
 
+// create structures
+struct user {
+  int id;
+  string name;
+  string password;
+  float payrate;
+};
+  
+
 // return the addition
 int add(int a, int b) {
   return a + b;
@@ -89,5 +98,13 @@ int main() {
   cout << "a_c: " << a_c << EOL;
   cout << "a_c[4]: " << a_c[4] << EOL;
   
+  // structures
+  user u;
+  u.id = 0;
+  u.name = "damian";
+  u.password = "pordword";
+  u.payrate = 32.87;
+  
+  cout << "id:[" << u.id << "] name:[" << u.name << "] password:[" << u.password << "] payrate:[" << u.payrate << "]" << EOL;
 }
 
